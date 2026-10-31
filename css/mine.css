@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.col{
+    border: 1px solid #2f2d2d;
+    width: 24%;
+}
+p{
+    text-align: center;
+}
+/*media query for tablets*/
+@media screen and (min-width: 768px)and(max-width:1023px)
+{
+    .col{
+        width: 48%;
+    }
+    p{
+        color: #ff0000;
+       margin-bottom: 12px;
+    }
+}
+@media screen and(max-width:767px)
+{
+    .col{
+        width: 100%;
+        margin-bottom: 12px;
+        
+    }
+    p{
+        color: #0000ff;
+        
+    }
+}
+/* sm md lg xl xxl */
